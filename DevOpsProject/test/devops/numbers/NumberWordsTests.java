@@ -13,10 +13,7 @@ public class NumberWordsTests {
 		numWords = new NumberWordsApplication() ;
 	}
 
-	@Test
-	public void numberOutOfRangeReturnsError() {
-		Assert.assertEquals( "Error", "Number out of range", numWords.convert(-1)) ;
-	}
+	
 	
 	@Test
 	public void Test249()
