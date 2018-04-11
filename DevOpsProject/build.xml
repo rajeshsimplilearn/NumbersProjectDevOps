@@ -66,4 +66,16 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
+  	<target name = "build-jar">
+  		   <jar destfile = "${web.dir}/lib/number.jar"
+  		      basedir = "/home/student/DevOps/DevOpsProject/src/devops/numbers/"
+  		      includes = "/home/student/DevOps/DevOpsProject/bin/devops/numbers/**"
+  		      excludes = "**/Test.class">
+  		      
+  		      <manifest>
+  		      	<attribute name="Main-Class" value="${main-class}"/>
+  		      	            <attribute name="Class-Path" value="${manifest.classpath}"/>
+  		      </manifest>
+  		   </jar>
+  		</target>
 </project>
